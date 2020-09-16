@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import Header from '../Header';
-import CharacterCard from '../CharacterCard';
-import Footer from '../Footer';
+import Header from '../../components/Header';
+import CharacterCard from '../../components/CharacterCard';
+import Footer from '../../components/Footer';
 
 import { 
     Container,

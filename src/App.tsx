@@ -1,5 +1,5 @@
 import React from 'react';
-import CharactersPage from './components/CharactersPage';
+import CharactersPage from './pages/CharactersPage';
 
 import GlobalStyles from './styles/GlobalStyles';
 
