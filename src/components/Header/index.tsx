@@ -5,7 +5,7 @@ import { Container } from './styles';
 const Header: React.FC = () => {
     return (
         <Container>
-            <strong>Rick and Morty</strong>
+            <strong>Rick and Morty Tracker</strong>
         </Container>
     );
 }
