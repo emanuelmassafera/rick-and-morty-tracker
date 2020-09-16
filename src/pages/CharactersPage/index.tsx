@@ -11,6 +11,7 @@ import {
 
 
 interface ICharacterInfo {
+    id: number;
     name: string;
     status: string;
     species: string;
@@ -23,6 +24,7 @@ interface ICharacterInfo {
 }
 
 interface IEpisodeInfo {
+    id: number;
     name: string;
     url: string;
 }
@@ -30,6 +32,7 @@ interface IEpisodeInfo {
 const CharactersPage: React.FC = () => {
 
     const [characterInfo, setCharacterInfo] = useState<ICharacterInfo>({
+        id: 0,
         name: "",
         status: "",
         species: "",
@@ -42,6 +45,7 @@ const CharactersPage: React.FC = () => {
     });
 
     const [episodeInfo, setEpisodeInfo] = useState<IEpisodeInfo>({
+        id: 0,
         name: "",
         url: "",
     });

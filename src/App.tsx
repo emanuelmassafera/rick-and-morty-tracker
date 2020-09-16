@@ -1,12 +1,14 @@
 import React from 'react';
-import CharactersPage from './pages/CharactersPage';
 
+import Routes from './routes';
 import GlobalStyles from './styles/GlobalStyles';
+
+
 
 function App() {
   return (
     <>
-      <CharactersPage />
+      <Routes />
       <GlobalStyles />
     </>
   );

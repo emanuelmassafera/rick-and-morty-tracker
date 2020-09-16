@@ -8,6 +8,7 @@ import {
 } from './styles';
 
 interface ICharacterInfo {
+    id: number;
     name: string;
     status: string;
     species: string;
@@ -20,6 +21,7 @@ interface ICharacterInfo {
 }
 
 interface IEpisodeInfo {
+    id: number;
     name: string;
     url: string;
 }
