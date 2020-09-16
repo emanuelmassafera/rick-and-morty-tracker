@@ -123,11 +123,19 @@ export const Info = styled.div<Props>`
 
         > p {
             font-size: 20px;
-            color: rgb(36, 40, 47);
             font-weight: bold;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+
+            > a {
+                color: rgb(36, 40, 47);
+                transition: all 0.2s;
+
+                &:hover {
+                    color: #7D65F6;
+                }
+            }
         }
     }
 

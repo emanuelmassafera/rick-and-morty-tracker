@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import { 
     Container,
     Card,
@@ -70,7 +72,7 @@ const CharacterCard: React.FC<Props> = ( { characterInfo, episodeInfo }) => {
                     <div className="first-seen">
                         <span>First seen in</span>
                         <p>
-                            { episodeInfo.name }
+                            <Link className="text-link" to={`/episode/${episodeInfo.id}`}>{ episodeInfo.name }</Link>
                         </p>
                     </div>
                 </Info>
