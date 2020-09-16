@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 
 import Header from '../Header';
 import CharacterCard from '../CharacterCard';
@@ -29,6 +28,7 @@ interface IEpisodeInfo {
 }
 
 const CharactersPage: React.FC = () => {
+
     const [characterInfo, setCharacterInfo] = useState<ICharacterInfo>({
         name: "",
         status: "",
@@ -46,19 +46,31 @@ const CharactersPage: React.FC = () => {
         url: "",
     });
 
-    const api = axios.create();
+    const loadEpisodeInfo = async () => {
+        const response = await fetch(`${characterInfo.episode.reverse().pop()}`);
+
+        const episodeData = await response.json();
+
+        setEpisodeInfo(episodeData);
+    }
+
+    const loadCharacterInfo = async () => {
+        const randomCharacterNumber = Math.floor(Math.random()*671);
+
+        const response = await fetch(`https://rickandmortyapi.com/api/character/${randomCharacterNumber}`);
+
+        const characterData = await response.json();
+
+        setCharacterInfo(characterData);
+    }
 
     useEffect(() => {
-        api.get<ICharacterInfo>(`https://rickandmortyapi.com/api/character/${Math.floor(Math.random()*671)}`).then(response => {
-            setCharacterInfo(response.data);
-        });
-    }, [])
+        loadCharacterInfo();
+    }, []);
 
     useEffect(() => {
-        api.get<IEpisodeInfo>(`${characterInfo.episode.reverse().pop()}`).then(response => {
-            setEpisodeInfo(response.data);
-        });
-    }, [characterInfo])
+        loadEpisodeInfo();
+    }, [characterInfo]);
 
     return (
         <Container>
