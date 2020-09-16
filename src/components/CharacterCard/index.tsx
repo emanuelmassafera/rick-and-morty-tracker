@@ -39,7 +39,7 @@ const CharacterCard: React.FC<Props> = ( { characterInfo, episodeInfo }) => {
         <Container>
             <Card>
                 <Image>
-                    <img src={characterInfo.image} alt="Imagem"/>
+                    <img src={characterInfo.image} alt="Character Image"/>
                 </Image>
 
                 <Info  alive={characterInfo.status === 'Alive'}>

@@ -10,8 +10,10 @@ export const Container = styled.div`
     padding: 20px 0;
     background-color: rgb(36, 40, 47);
 
-    > strong {
-        color: #DFDFDF;
-        font-size: 32px;
+    > a {
+        > strong {
+            color: #DFDFDF;
+            font-size: 32px;
+        }
     }
 `;

@@ -41,7 +41,13 @@ export const Image = styled.div`
 
     @media (max-width: 900px) {
        width: 100%;
-   }
+
+        > img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 0;
+        }
+    }
 
    @media (max-width: 500px) {
        flex-direction: column;

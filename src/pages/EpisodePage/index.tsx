@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import Header from '../../components/Header';
+import EpisodeCard from '../../components/EpisodeCard';
 import Footer from '../../components/Footer';
 
 import { useParams } from 'react-router-dom';
@@ -42,17 +43,7 @@ const EpisodePage: React.FC = () => {
         const episodeData = await response.json();
 
         setEpisodeInfo(episodeData);
-    }
-
-    // const loadCharactersInfo = async () => {
-    //     const promises = episodeInfo.characters.map(async character => {
-    //         const response = await fetch(`https://rickandmortyapi.com/api/character/${character.id}`);
-
-    //         const episodeData = await response.json();
-
-    //         setEpisodeInfo(episodeData);
-    //     });
-    // }
+    };
 
     useEffect(() => {
         loadEpisodeInfo();
@@ -63,9 +54,7 @@ const EpisodePage: React.FC = () => {
             <Header />
 
             <Content>
-                {episodeInfo.name}
-                {episodeInfo.air_date}
-                {episodeInfo.episode}
+                <EpisodeCard episodeInfo={episodeInfo} />
             </Content>
 
             <Footer />
