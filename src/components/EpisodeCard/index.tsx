@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import { 
     Container,
     Card,
@@ -68,7 +70,9 @@ const EpisodeCard: React.FC<IProps> = ({ episodeInfo }) => {
                     <ul>
                         {charactersInfo.map((character: any) => (
                             <li key={character.id}>
-                                <img src={character.image} alt="Character Image" title={character.name}/>
+                                <Link to={`/character/${character.id}`}>
+                                    <img src={character.image} alt="Character Image" title={character.name}/>
+                                </Link>
                             </li>
                         ))}
                     </ul>

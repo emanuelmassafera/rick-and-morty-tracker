@@ -125,17 +125,20 @@ export const Images = styled.div`
             justify-content: center;
             align-items: center;
 
-            > img {
-                width: 90px;
-                object-fit: cover;
-                object-position: center;
-                border-radius: 50%;
-                flex-shrink: 0;
+            > a {
+                > img {
+                    width: 90px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 50%;
+                    flex-shrink: 0;
 
-                &:hover {
-                    border: 2px solid #7D65F6;
+                    &:hover {
+                        border: 2px solid #7D65F6;
+                    }
                 }
             }
+
         }
 
         @media (max-width: 900px) {
@@ -148,9 +151,12 @@ export const Images = styled.div`
 
             > li {
 
-                > img {
-                    width: 80px;
-                }  
+                > a {
+                    > img {
+                        width: 80px;
+                    }  
+                }
+
             }
         }
 
@@ -160,9 +166,11 @@ export const Images = styled.div`
 
             > li {
 
-                > img {
-                    width: 80px;
-                }  
+                > a {
+                    > img {
+                        width: 80px;
+                    }  
+                }
             }
         }
     }
