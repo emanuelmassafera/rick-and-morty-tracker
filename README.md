@@ -1,44 +1,98 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img alt="Launchbase" src="./public/RickAndMorty.png" width="300px" />
+</h1>
 
-## Available Scripts
+<h1 align="center">Rick and Morty Tracker</h1>
 
-In the project directory, you can run:
+<p align="center">👾 Rastreador de personagens da série de animação Rick and Morty 👾</p>
 
-### `yarn start`
+<h4 align="center">🚧   Concluído 🚀 🚧</h4>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre o projeto](#-sobre-o-projeto)
+   * [Tecnologias](#-tecnologias)
+   * [Layout](#-layout)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+   * [Autor](#-autor)
+   * [Licença](#-licenca)
+<!--te-->
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Sobre o projeto <a name="-sobre-o-projeto" style="text-decoration:none"></a>
 
-### `yarn build`
+Aplicação React que consome API acerca da série de animação Rick and Morty e mostra em tela os dados dos personagens e dos episódios. 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Tecnologias <a name="-tecnologias" style="text-decoration:none"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **[ReactJS](https://reactjs.org/)**
+- **[React Router](https://reactrouter.com/web/guides/quick-start)**
+- **[Styled Components](https://styled-components.com/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[NodeJS](https://nodejs.org/en/)**
+- **[Rick and Morty API](https://rickandmortyapi.com/)**
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Layout <a name="-layout" style="text-decoration:none"></a>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h1 align="center">
+    <img alt="Gif" src="./public/RickAndMortyTracker.gif" width="800px" />
+</h1>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<h1 align="center">
+    <img alt="Gif Responsividade" src="./public/RickAndMortyTrackerResponsive.gif" width="800px" />
+</h1>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Como executar o projeto <a name="-como-executar-o-projeto" style="text-decoration:none"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Pré-requisitos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com) e [Node.js](https://nodejs.org/en/). Para trabalhar com o código, é recomendável o uso de um bom editor, como o [VSCode](https://code.visualstudio.com/).
+
+#### Rodando a aplicação
+
+```bash
+
+# Clone este repositório
+$ git clone https://github.com/emanuelmassafera/rick-and-morty-tracker.git
+
+# Acesse a pasta do projeto pelo terminal/cmd
+$ cd rick-and-morty-tracker
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação
+$ npm start
+
+# O servidor inciará na porta:3000 - acesse http://localhost:3000
+
+```
+---
+
+## Autor <a name="-autor" style="text-decoration:none"></a>
+
+<img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/65625500?s=460&u=eb9e300de61698fc8531949a451ce2f0e9da46f9&v=4" width="100px;" alt=""/>
+<sub>Emanuel Massafera</sub>
+
+<b></b>
+
+[![Badge](https://img.shields.io/static/v1?label=&message=Emanuel&color=blue&style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/emanuelmassafera/)](https://www.linkedin.com/in/emanuelmassafera/) [![Badge](https://img.shields.io/static/v1?label=&message=emanuel301@live.com&color=0078D4&style=flat-square&logo=Microsoft-Outlook&logoColor=white&link=mailto:emanuel301@live.com)](mailto:emanuel301@live.com)
+
+---
+
+## Licença <a name="-licenca" style="text-decoration:none"></a>
+
+Esse repositório está licenciado pela **MIT LICENSE**. Para informações detalhadas, leia o arquivo [LICENSE](https://github.com/emanuelmassafera/rick-and-morty-tracker/blob/master/LICENSE). 
+
+Made with ♥ by Emanuel Massafera :wave: [Get in touch!](https://www.linkedin.com/in/emanuelmassafera/)
