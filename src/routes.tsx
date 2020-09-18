@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import CharactersPage from './pages/CharactersPage';
 import EpisodePage from './pages/EpisodePage';
@@ -10,7 +10,8 @@ const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={CharactersPage} />
+                <Redirect exact from="/" to="/randomcharacter" />
+                <Route path="/randomcharacter" component={CharactersPage} />
                 <Route path="/episode/:id" component={EpisodePage} />
                 <Route path="/character/:id" component={SpecificCharacterPage} />
             </Switch>
