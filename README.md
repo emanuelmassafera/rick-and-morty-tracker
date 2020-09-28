@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Launchbase" src="./public/RickAndMorty.png" width="300px" />
+    <img alt="Rick and Morty Image" src="./public/RickAndMorty.png" width="300px" />
 </h1>
 
 <h1 align="center">Rick and Morty Tracker</h1>
